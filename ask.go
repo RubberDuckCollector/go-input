@@ -40,6 +40,8 @@ func (i *UI) Ask(query string, opts *Options) (string, error) {
 		}
 
 		// Display the instruction to user and ask to input.
+		// NOTE: might need this later but for now it suits my needs
+		// buf.WriteString(": ")
 		fmt.Fprintf(i.Writer, buf.String())
 
 		// Read user input from UI.Reader.
